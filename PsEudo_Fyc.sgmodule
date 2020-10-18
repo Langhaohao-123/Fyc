@@ -46,4 +46,4 @@ Zaker = type=cron,cronexp=0 1 0 * * *,script-path=https://raw.githubusercontent.
 饿了么打卡领红包 = type=cron,cronexp=21 15 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js
 # > 万达电影
 万达电影 = type=cron,cronexp=25 15 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js,wake-system=true
-
+新浪微博 = type=cron,cronexp=25 15 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
