@@ -1,11 +1,11 @@
 #!name=JD Bean Tasks
-#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-11-21 21:30
+#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-11-21 23:23
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 [Script]
 # > Last Update Instructions
-# >>> 增加 "东东小窝" 脚本, 修改 "京喜工厂" 脚本的执行时间和增加 "唤醒系统" 机制
+# >>> 重写 "宠汪汪" 全部喂食脚本的执行时间, 更符合实际情况
 
 # > 获取京东Cookie (获取地址 : bean.m.jd.com)
 获取京东Cookie = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
@@ -33,13 +33,13 @@
 # >>>>> 偷粮 {00:04 06:04}
 宠汪汪————偷粮 = type=cron,cronexp="30 4 0,6 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_steal.js
 # >>>>> 喂食 (不追求每日"8"次全部成功,单独分"7"次执行,以确保成功喂食，从早上开始每次喂食间隔 183 分钟)
-宠汪汪————每日任务喂食 = type=cron, cronexp="0 30 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js
-宠汪汪————第二次喂食 = type=cron, cronexp="0 51 5 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
-宠汪汪————第三次喂食 = type=cron, cronexp="0 54 8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
-宠汪汪————第四次喂食 = type=cron, cronexp="0 57 11 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
-宠汪汪————第五次喂食 = type=cron, cronexp="0 1 15 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
-宠汪汪————第六次喂食 = type=cron, cronexp="0 4 18 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
-宠汪汪————第七次喂食 = type=cron, cronexp="0 7 21 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
+宠汪汪——第一次 = type=cron, cronexp="0 30 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
+宠汪汪——第二次 = type=cron, cronexp="0 51 5 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
+宠汪汪——早餐 = type=cron, cronexp="0 54 8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js
+宠汪汪——午餐 = type=cron, cronexp="0 57 11 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js
+宠汪汪——第五次 = type=cron, cronexp="0 1 15 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
+宠汪汪——晚餐 = type=cron, cronexp="0 4 18 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js
+宠汪汪——第七次 = type=cron, cronexp="0 7 21 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
 
 # >>> 东东农场 {06:00 12:00 18:00}
 东东农场 = type=cron, cronexp="0 0 6-18/6 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_fruit.js
