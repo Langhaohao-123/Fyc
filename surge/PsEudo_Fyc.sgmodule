@@ -10,10 +10,9 @@ cron "30 0 8-22/2 * * *" script-path=https://raw.githubusercontent.com/evilbutch
 彩云天气 = type=cron,cronexp=30 8-22/2 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, script-update-interval=0
 汇率监控 = type=cron,cronexp=0 8 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, script-update-interval=0
 滴滴出行辅助 = type=cron,cronexp=45 59 23 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_reward.js, script-update-interval=0
-cron "0 1,20 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+滴滴出行 = type=cron,cronexp=0 1,20 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 http-request ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
-滴滴出行 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js, script-update-interval=0
 快手极速版 = type=cron,cronexp=11 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js, script-update-interval=0
 中国电信套餐 = type=cron,cronexp=30 0 8 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js, script-update-interval=0
 52破解 = type=cron,cronexp=30 5 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, script-update-interval=0
