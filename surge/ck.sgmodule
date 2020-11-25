@@ -45,6 +45,10 @@ http-response ^https:\/\/draw\.jdfcloud\.com\/\/api\/user\/addUser\?code=\w+& sc
 http-request ^https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\? script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js, timeout=10, tag=宠汪汪助力获取Token
 http-request ^https:\/\/draw\.jdfcloud\.com\/\/pet\/enterRoom\?reqSource=weapp&invitePin=.*+(&inviteSource=task_invite&shareSource=\w+&inviteTimeStamp=\d+&openId=\w+)?|^https:\/\/draw\.jdfcloud\.com\/\/pet\/helpFriend\?friendPin script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_help.js, timeout=10, tag=宠汪汪强制为别人助力
 http-response ^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com\/\/pet\/getPetTreasureBox script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_petTreasureBox.js, timeout=10, tag=聚宝盆投狗粮辅助
+
+#QQ读书
+QQ读书 = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/user\/init,script-path=https://raw.githubusercontent.com/xingliuchao/jd/main/QQread.js, requires-header=true
+
 # > 电信金豆换话费
 电信金豆换话费Cookie = type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/exchange\/consume,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js, requires-body=true
 # > 云闪付签到cookie
