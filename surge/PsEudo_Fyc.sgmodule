@@ -57,5 +57,4 @@ cron "0 10 */3 * *" script-path=https://raw.githubusercontent.com/elecV2/Quantum
 cron "7 0 * * *" script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js, tag=梨涡签到领现金
 cron "5 8 * * *" script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js, tag= 京东特权值
 20 * * * * QQread.js, tag=QQ阅读, img-url=https://raw.githubusercontent.com/Orz-3/task/master/qq.png, enabled=true
-京东赚赚 = type=cron,cronexp=0 9 * * *,timeout=60,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js,
 cron "0 10 0 * * *" script-path=https://gitee.com/hanfuxing/personal-collection/raw/master/QQReadSign.js
