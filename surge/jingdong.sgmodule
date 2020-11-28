@@ -69,7 +69,7 @@
 抽奖机 = type=cron,cronexp="0 11 0 * * *",wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
 
 # >>> 东东小窝 {00：11}
-东东小窝 = type=cron, cronexp=“30 11 0 * * *”, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_woHome.js
+东东小窝 = type=cron, cronexp=“30 17 0 * * *”, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_woHome.js
 
 # >>> 天天加速 {1-23/2:05}
 天天加速 = type=cron, cronexp="0 5 1-23/2 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_speed.js
@@ -79,6 +79,9 @@
 
 # >>> 京喜工厂 {00:00}
 京喜工厂= type=cron,cronexp="20 0 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js,script-update-interval=0
+
+# >>> 十元街 {07：10}
+十元街 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js
 
 # > 临时活动
 # >>> 排行榜 (2020.12.31结束)
