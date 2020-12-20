@@ -1,5 +1,6 @@
-#!name=QQYD
-#!desc=该模块适用于定时签到
+#!name=qqyd
+#!desc=该模块适用于备用
 #!system=ios
 
+[Script]
 cron "*/11 * * * *" script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js
