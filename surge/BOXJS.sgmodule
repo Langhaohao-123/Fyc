@@ -3,3 +3,5 @@ BoxJs = type=http-request, pattern=^https?://boxjs.net, script-path=https://gite
 [URL Rewrite]
 ^https://boxjs.net http://boxjs.net 302
 ^http://ww1.boxjs.net http://boxjs.net 302
+[MITM]
+hostname = %APPEND% api.m.jd.com, jdjoy.jd.com, draw.jdfcloud.com, boxjs.net
