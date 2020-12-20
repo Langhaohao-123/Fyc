@@ -1,1 +1,5 @@
+#!name=QQYD
+#!desc=该模块适用于定时签到
+#!system=ios
+
 cron "*/11 * * * *" script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js
