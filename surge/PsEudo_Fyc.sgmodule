@@ -48,4 +48,4 @@ cron "0 10 */3 * *" script-path=https://raw.githubusercontent.com/elecV2/Quantum
 # iisams 
 cron "7 0 * * *" script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js, tag=梨涡签到领现金
 cron "5 8 * * *" script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js, tag= 京东特权值
-cron "*/11 * * * *" script-path=https://https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js
+cron "*/11 * * * *" script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js
