@@ -122,8 +122,6 @@ PUBG = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=20,script-path=https
 # 京东健康
 京东健康 = type=cron,cronexp="10 8 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdh.js
 
-# 京东看一看
-京东看一看 = type=cron,cronexp="10-20/10 9 * * *",wake-system=1,timeout=2120,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js
 
 # >健康抽奖机
 健康抽奖机 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js
