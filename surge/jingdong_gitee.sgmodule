@@ -54,6 +54,8 @@
 
 # >>> 东东超市 {00:05 09:05 17:05} (0点可能上架蓝币商品)
 东东超市 = type=cron, cronexp="0 5 0,9-17/8 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_superMarket.js
+京小超兑换奖品
+cron "0,30 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_blueCoin.js,timeout=130, wake-system=1, tag=京小超兑换奖品
 
 # >>> 摇京豆 {00:06}
 摇京豆 = type=cron,cronexp="30 6 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_club_lottery.js
@@ -75,6 +77,22 @@
 
 # >>> 东东小窝 {00:09}
 东东小窝 = type=cron,cronexp="30 9 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_small_home.js
+
+#点点券
+cron "30 0,20 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_necklace.js, timeout=650, wake-system=1, tag=点点券
+
+#京喜工厂
+cron "24 * * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_dreamFactory.js, timeout=650, wake-system=1, tag=京喜工厂
+
+#东东工厂
+cron "40 * * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdfactory.js, timeout=650, wake-system=1, tag=东东工厂
+
+#注销京东店铺会员卡
+cron "20 12 * * 6" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unbind.js, timeout=750, wake-system=1, tag=注销京东店铺会员卡
+
+#签到领现金
+签到领现金 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=2220,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_cash.js
+
 
 # >>> 十元街 {00:10}
 十元街 = type=cron, cronexp="0 10 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_syj.js
