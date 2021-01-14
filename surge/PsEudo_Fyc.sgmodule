@@ -38,7 +38,7 @@ Zaker = type=cron,cronexp=0 6 0 * * *,script-path=https://raw.githubusercontent.
 # > 中青看点
 # 进入app，进入任务中心或者签到一次,即可获取Cookie. 阅读一篇文章，获取阅读请求body，并获取阅读时长，在阅读文章最下面有个惊喜红包，点击获取惊喜红包请求
 中青看点 = type=cron,cronexp=35 */6 7-23 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
-# 切换会话 = type=cron,cronexp=0 */6 7-23 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js,wake-system=1
+# 切换会话 = type=cron,cronexp=0 */6 0-24 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js,wake-system=1
 新浪微博 = type=cron,cronexp=25 15 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
 # > 支付宝
 支付宝 = type=cron,cronexp="0 30 7 * * *", wake-system=1, timeout=180, script-path= https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/Alipay.js
@@ -51,5 +51,3 @@ cron "5 8 * * *" script-path=https://raw.githubusercontent.com/iisams/Scripts/ma
 百度极速版 = type=cron,cronexp=0 */6 3-23 * * *,script-path= https://raw.githubusercontent.com/Sunert/Scripts/master/Task/baidu_speed.js
 # >墨迹天气
 墨迹天气 = type=cron,cronexp=30 7-22/1 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/moji.js
-# >切换会话
-切换会话 = type=cron,cronexp=30 * * * * *,script-path= https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js
