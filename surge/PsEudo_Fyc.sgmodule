@@ -51,3 +51,5 @@ cron "5 8 * * *" script-path=https://raw.githubusercontent.com/iisams/Scripts/ma
 百度极速版 = type=cron,cronexp=0 */6 3-23 * * *,script-path= https://raw.githubusercontent.com/Sunert/Scripts/master/Task/baidu_speed.js
 # >墨迹天气
 墨迹天气 = type=cron,cronexp=30 7-22/1 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/moji.js
+# >切换会话
+切换会话 = type=cron,cronexp=30 * * * * *,script-path= https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js
