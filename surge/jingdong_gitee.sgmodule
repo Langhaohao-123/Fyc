@@ -127,6 +127,10 @@ cron "20 12 * * 6" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/j
 # >>> 疯狂的Joy (截止日期不清楚)
 疯狂的Joy = type=cron, cronexp="10 7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy.js
 
+# >>>提交并获取互助码
+
+获取并提交助力码 = type=cron,cronexp="0 35 2 1,10,20 * ?",wake-system=1,timeout=120,script-path=https://gitee.com/qq34347476/quantumult-x/raw/master/get_share_jd_code.js
+
 # > BoxJs TF 
 # >>> 地址在下方,复制到浏览器打开即可
 #boxjs.net
