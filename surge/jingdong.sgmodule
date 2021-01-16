@@ -1,19 +1,25 @@
-#!name=LXK9301 iOS Tasks Module
-#!desc=iOS Tasks 模块配置
-
-# Task模块配置 By LXK9301
-# GitHub主页(https://github.com/LXK9301/jd_scripts)
-# TG讨论组 (https://t.me/JD_fruit_pet)
-# TG通知频道 (https://t.me/jdfruit)
-# Surge的Task脚本模块地址: https://raw.githubusercontent.com/LXK9301/jd_scripts/master/Surge/LXK9301_Task.sgmodule.sgmodule
+#!name=京东领豆任务合集 (GitHub)
+#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2021-01-16 21:22
+#!tag = type=cron, cronexp="cronexample", wake-system=1, timeout=600, script-path=javescript
+#!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
+#!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 
 [Script]
+
+# > 获取京东Cookie 
+# >>> 获取地址在下方,复制到浏览器打开,使用手机号登陆,点击签到即可
+#bean.m.jd.com
+获取京东Cookie = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
 #东东农场
 cron "40 8-18/5 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_fruit.js,timeout=530, wake-system=1, tag=东东农场
 #东东萌宠
 cron "20 8-18/5 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_pet.js,timeout=530, wake-system=1, tag=东东萌宠
-#京东种豆得豆
-cron "50 7-21/2 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_plantBean.js,timeout=630, wake-system=1, tag=京东种豆得豆
+# >>> 种豆得豆系列
+# >>>>> 凌晨时段可以领取一瓶营养液 {00:04}
+种豆得豆——凌晨时段 = type=cron, cronexp="0 4 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_plantBean.js
+# >>>>> 其余时段 {22,7-21/2:00}
+种豆得豆——整点时段 = type=cron, cronexp="0 0 22,7-21/2 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_plantBean.js
 #宠汪汪
 cron "15 1,7,9,12,18,21 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy.js,timeout=330, wake-system=1, tag=宠汪汪
 #宠汪汪喂食(仅喂食)
