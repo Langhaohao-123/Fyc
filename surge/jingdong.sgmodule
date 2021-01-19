@@ -87,4 +87,5 @@ cron "30 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scrip
 #京东年货节
 京东年货节 = type=cron,cronexp="0 8 * * *",wake-system=1,timeout=2220,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nh.js
 京东收🧨 = type=cron,cronexp="20 * * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js
+京年团圆pick = type=cron,cronexp="5 0 19,20 1 *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_vote.js
 
