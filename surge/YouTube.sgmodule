@@ -1,6 +1,6 @@
-
 #!name=YouTube
-#!desc=YouTube videos removes ads. v20201226.01
+#!desc=油管去广告脚本
+#!system=ios
 [Rule]
 URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
 URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
