@@ -1,4 +1,4 @@
-name=jd_scripts GitHub2Gitee
+#!name=jd_scripts GitHub2Gitee
 #!desc=LXK9301 GitHub 转 Gitee
 
 [URL Rewrite]
