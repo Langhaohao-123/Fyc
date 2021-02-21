@@ -25,8 +25,6 @@ http-response ^https://kd\.youth\.cn/WebApi/NewTaskIos/getTaskList script-path=h
 # 已有阅读时长数据时，只保存大于1分钟的时长数据
 http-request ^https?://ios\.baertt\.com/v5/user/app_stay\.json script-path=https://raw.githubusercontent.com/ztxtop/x/main/youth_banner.js, requires-body=1, tag=中青iOS时长数据
 
-中青阅读body获取 = type=http-request, pattern=https://ios.baertt.com/v5/article/complete.json ,requires-body=1, max-size=-1, script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/zqgetbody.js
-
 中青自动阅读 = type=cron, cronexp="10 1-23 * * *", wake-system=1, timeout=180, script-path= https://raw.githubusercontent.com/CenBoMin/QuantumultX/master/Scripts/Youth/Youth_AutoRead.js
 
 [MITM]
