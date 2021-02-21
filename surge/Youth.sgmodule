@@ -25,11 +25,5 @@ http-response ^https://kd\.youth\.cn/WebApi/NewTaskIos/getTaskList script-path=h
 # 已有阅读时长数据时，只保存大于1分钟的时长数据
 http-request ^https?://ios\.baertt\.com/v5/user/app_stay\.json script-path=https://raw.githubusercontent.com/ztxtop/x/main/youth_banner.js, requires-body=1, tag=中青iOS时长数据
 
-# Loon 定时任务配置
-# cron "30 6 * * *" script-path=https://raw.githubusercontent.com/ztxtop/x/main/youth_banner.js, enabled=true, tag=中青看看赚
-
-# QX构造请求配置
-# 30 6 * * * https://raw.githubusercontent.com/ztxtop/x/main/youth_banner.js, tag=中青看看赚, img-url=https://raw.githubusercontent.com/Orz-3/task/master/youth.png, enabled=true
-
 [MITM]
 hostname = %APPEND% kd.youth.cn, ios.baertt.com
