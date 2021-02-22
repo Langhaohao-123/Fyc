@@ -1,5 +1,6 @@
 #!name=京东CK
 #!desc=该模块“京东” 可以获取京豆CK
+#!system=ios
 
 [Script]
 
