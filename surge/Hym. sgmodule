@@ -10,5 +10,5 @@ http-response https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf-user-auth-web\/ign
 
 
 
-mitm]
-hostname = veishop.iboxpay.com
+[MITM]
+hostname = %APPEND% veishop.iboxpay.com,nebula.kuaishou.com, activity.m.kuaishou.com
