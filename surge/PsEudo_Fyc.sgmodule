@@ -36,7 +36,6 @@ Zaker = type=cron,cronexp=0 6 0 * * *,script-path=https://raw.githubusercontent.
 # > 腾讯新闻
 腾讯新闻 = type=cron,cronexp=0 */6 3-23 * * *,script-path=https://raw.githubusercontent.com/saintartoria/Surge/master/Scripts/txnews.js
 # 切换会话 = type=cron,cronexp=0 */6 0-24 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js,wake-system=1
-新浪微博 = type=cron,cronexp=25 15 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
 # > 电信金豆换话费
 cron "0 10 */3 * *" script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js,tag=电信签到
 京东互助 = type=cron,cronexp=0 0 1 2,11,21 * ?,script-path= https://raw.githubusercontent.com/Langhaohao-123/BoxJs/master/Upload_ShareCode.js
