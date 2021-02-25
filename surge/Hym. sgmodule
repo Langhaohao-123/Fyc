@@ -13,5 +13,12 @@ http-response https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf-user-auth-web\/ign
 快手正式版 = type=http-request,pattern=https:\/\/activity\.m\.kuaishou\.com\/rest\/wd\/taskCenter\/\w+\/module\/list,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
 快手极速版 = type=http-request,pattern=https:\/\/nebula\.kuaishou\.com\/nebula\/task\/earning\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
 
+微博&钱包签到 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,script-update-interval=0
+
+# 获取微博 Cookie.
+微博签到 = type=http-request,pattern=https:\/\/api\.weibo\.cn\/\d\/users\/show,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+
+微博签到 = type=http-request,pattern=https:\/\/m\.weibo\.cn\/c\/checkin\/ug\/v2\/signin\/module\?module,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+
 [MITM]
-hostname = %APPEND% veishop.iboxpay.com,nebula.kuaishou.com, activity.m.kuaishou.com
+hostname = %APPEND% veishop.iboxpay.com,nebula.kuaishou.com, activity.m.kuaishou.com, api.weibo.cn, m.weibo.cn
