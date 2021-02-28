@@ -28,5 +28,5 @@
 TT语音 = type=http-request,pattern=https://node.52tt.com/activity-production/new-user-month-checkin/activity.Checkin/checkin,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/TT.js,script-update-interval=0
 TT语音 = type=cron,cronexp=0 8 * * *,script-path=https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/TT.js,script-update-interval=0
 [MITM]
-hostname = %APPEND% veishop.iboxpay.com,nebula.kuaishou.com, activity.m.kuaishou.com, api.weibo.cn, m.weibo.cn, node.52tt.com
+hostname = %APPEND% veishop.iboxpay.com,nebula.kuaishou.com, activity.m.kuaishou.com, api.weibo.cn, m.weibo.cn, node.52tt.com, as.xiaojukeji.com, common.diditaxi.com.cn //
 
