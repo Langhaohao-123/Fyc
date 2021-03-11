@@ -5,7 +5,7 @@
 [Script]
 
 春风转 = type=http-request,pattern=http://cf-api.douzhuanapi.cn:10002/api/,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/cfz.js,script-update-interval=0
-
+春风转 = type=cron,cronexp= */20 8-22 * * *, script-path= https://raw.githubusercontent.com/age174/-/main/cfz.js
 # 笑谱获取更新TOKEN 
 笑谱获取更新TOKEN = type=http-response,pattern=https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf-user-auth-web\/ignore_tk\/veishop\/v1\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.js
 笑谱 = type=cron,cronexp= */20 8-23 * * *, script-path= https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.js
