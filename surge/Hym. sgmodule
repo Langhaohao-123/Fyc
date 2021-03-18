@@ -24,5 +24,5 @@
 > 百度极速版
 百度极速版 = type=cron,cronexp=0 */6 3-23 * * *,script-path= https://raw.githubusercontent.com/Sunert/Scripts/master/Task/baidu_speed.js
 
-MITM
+[MITM]
 hostname = %APPEND% veishop.iboxpay.com,nebula.kuaishou.com, activity.m.kuaishou.com, api.weibo.cn, m.weibo.cn, as.xiaojukeji.com, common.diditaxi.com.cn , cf-api.douzhuanapi.cn
