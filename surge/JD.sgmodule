@@ -3,5 +3,5 @@
 #!system=ios
 
 [Script]
-东东超市兑换奖品 = type=cron,cronexp="58,59,0,1,2 59,0 23,0 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_blueCoin.js
-京东汽车兑换 = type=cron,cronexp="58,59,0,1,2 59,0 23,0 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_car_exchange.js
+东东超市兑换奖品狼嚎嚎 = type=cron,cronexp="58,59,0,1,2 59,0 23,0 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_blueCoin.js
+京东汽车兑换狼嚎嚎 = type=cron,cronexp="58,59,0,1,2 59,0 23,0 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_car_exchange.js
