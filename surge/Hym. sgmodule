@@ -4,6 +4,8 @@
 
 [Script]
 
+V生活 = type=http-request,pattern=http://iosvsh.zwzanwm.cn/,requires-body =1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/vsh.js,script-update-interval=0
+V生活 = type=cron,cronexp= 15 9, * * * , script-path= https://raw.githubusercontent.com/age174/-/main/vsh.js
 春风转 = type=http-request,pattern=http://cf-api.douzhuanapi.cn:10002/api/,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/cfz.js,script-update-interval=0
 春风转 = type=cron,cronexp= */12 8-22 * * *, script-path= https://raw.githubusercontent.com/age174/-/main/cfz.js
 #笑谱获取更新TOKEN
@@ -25,4 +27,4 @@
 百度极速版 = type=cron,cronexp=0 */6 3-23 * * *,script-path= https://raw.githubusercontent.com/Sunert/Scripts/master/Task/baidu_speed.js
 
 [MITM]
-hostname = %APPEND% veishop.iboxpay.com,nebula.kuaishou.com, activity.m.kuaishou.com, api.weibo.cn, m.weibo.cn, as.xiaojukeji.com, common.diditaxi.com.cn , cf-api.douzhuanapi.cn
+hostname = %APPEND% veishop.iboxpay.com,nebula.kuaishou.com, activity.m.kuaishou.com, api.weibo.cn, m.weibo.cn, as.xiaojukeji.com, common.diditaxi.com.cn , cf-api.douzhuanapi.cn , iosvsh.zwzanwm.cn
