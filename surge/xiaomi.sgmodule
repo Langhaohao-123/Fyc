@@ -8,4 +8,4 @@
 
 
 [MITM]
-hostname = %APPEND% hostname = %APPEND% account.huami.com
+hostname = %APPEND% account.huami.com
