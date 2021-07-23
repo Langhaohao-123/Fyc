@@ -5,9 +5,7 @@
 //GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Price.sgmodule
 //Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Price.sgmodule
 [Script]
-# > 淘宝比价
-# >> 不生效或失效的时候需要重装淘宝
-# >>> 注意：不开脚本进淘宝会使脚本失效！
+# 淘宝比价
 http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
