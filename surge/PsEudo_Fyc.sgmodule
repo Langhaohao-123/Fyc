@@ -19,9 +19,7 @@ Zaker = type=cron,cronexp=0 6 0 * * *,script-path=https://raw.githubusercontent.
 喜马拉雅 = type=cron,cronexp=0 8 0  * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js, script-update-interval=0
 电信营业厅 = type=cron,cronexp=0 9 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, script-update-interval=0
 趣头条 = type=cron,cronexp=*/3 6-21 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js, script-update-interval=0
-什么值得买_每日签到 = script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_checkin.js,timeout=120,type=cron,cronexp=5 0 * * *
-什么值得买_获取cookie = script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_checkin.js,type=http-request,requires-body=true,pattern=^https?:\/\/zhiyou\.smzdm\.com\/user$
-什么值得买_获取账号密码 = script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_checkin.js,type=http-request,requires-body=true,pattern=^https?:\/\/user-api\.smzdm\.com\/user_login\/normal$
+
 # > 腾讯视频
 # 1.手机浏览器访问并登录: https://film.qq.com/
 腾讯视频 = type=cron,cronexp=13 15 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
