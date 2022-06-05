@@ -4,8 +4,6 @@
 
 [Script]
 电信签到兑好礼活动Token
-https:\/\/mkt\.21cn\.com\/mkt\/api\/user\/queryActivityInfo\.do\?activityId=\d+ url script-request-header
-https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomSky.js
 http-response ^https:\/\/api\.gotokeep\.com\/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/keep.js, tag=Keep
 
 爱奇艺签到 = type=cron,cronexp=20 8-22/4 * * *,timeout=120,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
